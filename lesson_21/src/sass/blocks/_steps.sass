@@ -1,0 +1,102 @@
+.step-sec
+  padding: 52px 0;
+.step
+  flex-basis: 20%
+  text-align: center
+  position: relative
+  &::after
+    content: ''
+    width: 72px
+    height: 25px
+    position: absolute
+    background: url('../img/step-block/steps-arrow.png') no-repeat center
+    top: -12px
+    right: -15%
+  &:last-child
+    &::after
+      display: none 
+  &__image
+    width: 100px
+    height: 100px
+    border: 3px solid $main-color
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: auto
+    border-radius: 50%
+    margin-bottom: 26px
+    &_1
+      height: 35px
+      width: 34px
+    &_2
+      height: 35px
+      width: 35px
+    &_3
+      height: 32px
+      width: 35px
+    &_4
+      height: 35px
+      width: 29px
+    &_5
+      height: 35px
+      width: 35px
+  &__text
+    font-size: 14px
+    line-height: 20px
+    max-width: 160px
+    margin: auto
+  &s
+    &__title
+      margin: auto
+      margin-top: 17px
+      margin-bottom: 39px
+      max-width: 670px
+      text-align: center
+      font-size: 30px
+      line-height: 45px
+    &__subtitle
+      text-align: center
+      margin-bottom: 58px
+      font-size: 20px
+      line-height: 45px
+    &-block
+      display: flex
+      flex-wrap: wrap
+@media (max-width: 1200px)
+  .step
+    margin-bottom: 30px
+    flex-basis: 50%
+    &::after
+      display: none
+    &s
+      &-block
+        justify-content: center
+
+@media (max-width: 768px)
+  .step
+    &__image
+      margin-bottom: 26px
+      &-m
+        margin-bottom: 20px
+    &__text
+      font-size: 12px
+      line-height: 16px
+    &s
+      &-block
+        flex-direction: column
+      &__title
+        margin-top: -50px
+        margin-bottom: 10px
+        font-size: 18px
+        line-height: 22px
+      &__subtitle
+        font-size: 14px
+        line-height: 45px
+        margin-bottom: 18px
+
+@media (max-width:576px) and (min-width:320px)
+  .steps
+    &__title
+      margin-right: 4px
+  .step-sec
+    padding: 52px 0

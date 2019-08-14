@@ -1,0 +1,68 @@
+.portfolio
+  background: #f5f5f5 url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left
+  background-size: 50%
+  padding-bottom: 100px
+  padding-top: 88px
+  &__title
+    font-size: 30px
+    line-height: 45px
+    margin: auto
+    // padding-top: 85px
+    margin-bottom: 94px
+  &__img
+    width: 45px
+    height: 19px
+  &__arrows
+    display: flex
+    justify-content: space-between
+    max-width: 120px
+    margin: auto 
+    margin-top: 65px
+.slider
+  &__item
+    width: 401px
+    padding-right: 30px
+  &__image
+    // width: 370px
+
+@media (max-width: 1200px)
+  .slider
+    width: 773px
+    margin: 0 auto 
+
+@media (max-width: 830px)
+  .slider
+    width: 371px
+
+@media (max-width: 768px)
+  .portfolio
+    padding-top: 0
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      padding-top: 28px
+      margin-bottom: 44px
+    &__arrows
+      margin-top: 45px
+  .slider
+    &__image
+      display: flex
+      justify-content: center
+      align-items: center
+      // margin: 0 auto
+    &__item
+      // height: 186px
+      padding-right: 30px
+
+@media (max-width: 576px) and (min-width: 320px)
+  .portfolio
+    padding-bottom: 58px
+    background-image: none
+  .slider
+    width: 247px
+    &__image
+      width: 246px
+      height: 186px
+      & img
+        height: 50px
+  
